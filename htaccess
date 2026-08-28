@@ -1,0 +1,56 @@
+ErrorDocument 403 /project13436563/page69683231.html
+ErrorDocument 404 /project13436563/page69683231.html
+
+DirectoryIndex page69568831.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/project13436563/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^elandmilo$ page69568831.html [NC]
+RewriteRule ^elandmilo/$ page69568831.html [NC]
+
+RewriteRule ^catalog$ page69750005.html [NC]
+RewriteRule ^catalog/$ page69750005.html [NC]
+
+RewriteRule ^catalog-osnova$ page69681463.html [NC]
+RewriteRule ^catalog-osnova/$ page69681463.html [NC]
+
+RewriteRule ^catalog-xolod$ page69681731.html [NC]
+RewriteRule ^catalog-xolod/$ page69681731.html [NC]
+
+RewriteRule ^infomilo$ page69682061.html [NC]
+RewriteRule ^infomilo/$ page69682061.html [NC]
+
+RewriteRule ^milovari$ page69682979.html [NC]
+RewriteRule ^milovari/$ page69682979.html [NC]
+
+RewriteRule ^zakaz$ page69681855.html [NC]
+RewriteRule ^zakaz/$ page69681855.html [NC]
+
+RewriteRule ^dost$ page69682049.html [NC]
+RewriteRule ^dost/$ page69682049.html [NC]
+
+RewriteRule ^otzovi$ page69682259.html [NC]
+RewriteRule ^otzovi/$ page69682259.html [NC]
+
+RewriteRule ^dogovor$ page69682243.html [NC]
+RewriteRule ^dogovor/$ page69682243.html [NC]
+
+RewriteRule ^cookie$ page69682253.html [NC]
+RewriteRule ^cookie/$ page69682253.html [NC]
+
+RewriteRule ^non$ page69683231.html [NC]
+RewriteRule ^non/$ page69683231.html [NC]
+
+RewriteRule ^menu$ page69683317.html [NC]
+RewriteRule ^menu/$ page69683317.html [NC]
+
+RewriteRule ^pop$ page69683335.html [NC]
+RewriteRule ^pop/$ page69683335.html [NC]
+
+
